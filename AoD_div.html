@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>기본</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<style>
+		header {
+  position: sticky;
+  top: 0;
+}
+
+	navR {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		width: 66px;
+	}
+	
+    div {
+		padding: 10px;
+	}
+    img.left { 
+        float: left;
+      }
+	
+	h2 {
+		font-family: Nanum Gothic;
+		color: #246800;
+		font-weight: 600;
+	    }
+	p {
+		font-family: Nanum Gothic;
+		color: gray;
+		font-weight: 400;
+		line-height: 2
+	}
+</style>
+<script>
+    function fnMove(seq){
+        var offset = $("#div" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 100);
+    }
+</script>
+<BODY onresize="parent.resizeTo(1366,768)" onload="parent.resizeTo(1366,768)">
+
+	<!--상단메뉴시작 -->
+	<header>
+	 <table id="header" width="1300" height="120" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="images/AoD_01_nav_01.gif" width="60" height="120" alt=""></td>
+		<td>
+			<a href="index.html"><img src="images/AoD_01_nav_02.gif" width="90" height="120" alt=""></td>
+		<td>
+			<img src="images/AoD_01_nav_03.gif" width="150" height="120" alt=""></td>
+		<td onclick="fnMove('1')">
+			<img src="images/AoD_01_nav_04.gif" width="189" height="120" alt=""></td>
+		<td onclick="fnMove('2')">
+			<img src="images/AoD_01_nav_05.gif" width="194" height="120" alt=""></td>
+		<td onclick="fnMove('3')">
+			<img src="images/AoD_01_nav_06.gif" width="174" height="120" alt=""></td>
+		<td onclick="fnMove('4')">
+			<img src="images/AoD_01_nav_07.gif" width="243" height="120" alt=""></td>
+		<td>
+			<img src="images/AoD_01_nav_08.gif" width="200" height="120" alt=""></td>
+	</tr>
+</table></header><!--상단메뉴끝 -->
+	
+	<!--우측메뉴 -->
+	<navR><table id="navR" width="66" height="768" border="0" cellpadding="0" cellspacing="0" bgcolor="#FCFCFC">
+	<tr>
+		<td>
+			<img src="images/AoD_01_navR_01.gif" width="66" height="350" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="menu.html"><img src="images/AoD_01_navR_02.gif" width="66" height="70" alt="" ></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/AoD_01_navR_03.gif" width="66" height="348" alt=""></td>
+	</tr>
+</table></navR><!--우측메뉴끝 -->
+	
+	<div id="div1">
+	 <img src="images/1px.gif" width="1000" height="60" alt=""></div>
+	
+	<div><img src="images/1px.gif" width="150" height="100" class="left" alt=""> 
+    <div><img src="images/AoD_01_04.png" class="left"></div>
+		<div style="width: 100" align="left"> <br><br> <h2>다도</h2> 
+	
+		<p>다도에서 가장 중요한 것은 시간, 차의 양, 그리고 <br> 물의 양과 온도입니다.
+		세가지의 조화가 적절하게 <br>이뤄진다면 차를 더욱 맛있게 즐길 수 있습니다. <br>
+		잎차로 차를 우리기 위해선 필요한 조건을 <br>잘 갖춰야 차 본연의 맛을 더욱 잘 느낄 수 있습니다.</p></div>
+	<div id="div2"><img src="images/1px.gif" width="1000" height="50" alt=""></div></div>
+	
+	<div><img src="images/1px.gif" width="250" height="570" class="left" alt=""> 
+		
+	 <h2>다기세트</h2></div>
+	
+
+	  <table border="0" width="300" height="500">
+	<th>
+		<img src="images/AoD_01_10.gif" class="">
+		  </th>
+		  
+	<tr><!--2번째 줄 시작 -->
+	    <td>  
+			<p>
+			숙우는 끓인 물을 식히기 위해 사용하는 다기입니다. 차는 너무 뜨거운 물로 우리면 쓴 맛이 강해지기 때문에 60~70도 정도로 식혀서 차를 우려야 본연의 맛을 잘 느낄 수 있습니다. 다관은 차를 우릴 때 쓰는 것이고 1분에서 1분 30초 가량 차를 우리고 나면 잔에 따라 마십니다. 잎차를 보관할 때는 다호라는 통에 잎차를 담아 햇빛과 공기에 오염되지 않게 합니다. 다기를 구비할 때는 도자기로 된 것을 고르길 권장합니다. 도자기로 된 다기는 다른 재료에 비해 차가 빨리 식는 것을 막아줘 더 오래 따뜻하게 차를 마실 수 있게 도와줍니다.
+		</p></td>
+	</tr><!-- 첫번째 줄 끝 -->
+    </table>
+	<div id="div3">
+	 <img src="images/1px.gif" width="1300" height="60" alt=""></div><!-- 여백 -->
+	<div bgcolor="#EDF8DE"><table border="0" bordercolor="#EDF8DE" width ="1300" height="1000" align = "left" >
+    <tr bgcolor="#EDF8DE" align ="left">
+	<td colspan = "3" span style="color:#EDF8DE"></td>
+    </tr>
+    <tr align = "left" bgcolor="#EDF8DE">
+	<td width="250"></td>
+	<td height="80"><h2 align="left">기본순서</h2></td>
+	<td width="200"></td>
+    </tr>
+    <tr bgcolor="#EDF8DE">
+	<td></td>
+	<td width="710"><img src="images/AoD_HTD.png"></td>
+	<td></td>
+    </tr>
+    <tr bgcolor="#EDF8DE">
+	<td></td>
+	<td></td>
+	<td></td>
+    </tr></div>
+		 <img src="images/1px.gif" width="1000" height="60" alt=""></div><!-- 여백 -->
+	
+    <div id="div4">주의사항</div>
+	
+	
+		 <img src="images/1px.gif" width="1000" height="60" alt=""></div><!-- 여백 -->
+	
+ </BODY>
+
+
+</html>
